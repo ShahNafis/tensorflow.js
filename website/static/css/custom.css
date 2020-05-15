@@ -7,6 +7,14 @@
  
 /* your custom css */
 
+/* html {
+    font-family: 'Courier New';
+} */
+
+* {
+    font-family:  $myFont !important;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 

@@ -4,6 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+const path = require('path');
 
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
@@ -21,9 +22,13 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  // We need to keep the docs folder in the same folder
+  // as the package.json file for now
+  customDocsPath: path.basename(__dirname) + '/docs',// For Now cli
+
+  title: 'Learning TensorFlow.js', // Title for your website.
+  tagline: 'A doc site about me learning TensorFlow.js',
+  url: 'https://github.com/ShahNafis/tensorflow.js', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -31,46 +36,49 @@ const siteConfig = {
 
   // Used for publishing and more
   projectName: 'test-site',
-  organizationName: 'facebook',
+  organizationName: 'ShahNafi',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
+    {doc: 'purposeDoc', label: 'Docs'},
     // {doc: 'doc4', label: 'API'},
     // {page: 'help', label: 'Help'},
-    // {blog: true, label: 'Blog'},
+    {blog: true, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
+  headerIcon: 'img/lockup.svg',
   footerIcon: 'img/favicon.ico',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#5d0a62',
+    primaryColor: '#9463df',
     secondaryColor: '#410744',
   },
 
   /* Custom fonts for website */
-  /*
+  
   fonts: {
     myFont: [
-      "Times New Roman",
-      "Serif"
+      //"Lucida Sans Unicode"
+      // "Tahoma",
+      // "Arial",
+      // "Sans-Serif"
+      //"Monospace"
     ],
     myOtherFont: [
       "-apple-system",
       "system-ui"
     ]
   },
-  */
+  
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
