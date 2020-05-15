@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd ./website && npm run start",
+    "dev": "cd ./website && npm run start",
     "now": "now ./website --prod"
   },
   "repository": {
