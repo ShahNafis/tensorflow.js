@@ -1,7 +1,7 @@
 ---
 id: index
 title: Purpose of this project
-sidebar_label: Purpose of this projecft
+sidebar_label: Purpose of this project
 author: Shah Nafis Rafique
 authorURL: https://github.com/ShahNafis
 ---
