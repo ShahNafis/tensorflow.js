@@ -63,11 +63,11 @@ class HomeSplash extends React.Component {
         <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
-          {/* <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
-          </PromoSection> */}
+          <PromoSection>
+            <Button href="/docs">Docs</Button>
+            <Button href="/blog">Blog</Button>
+            {/* <Button href={docUrl('doc2.html')}>Example Link 2</Button> */}
+          </PromoSection>
         </div>
       </SplashContainer>
     );
@@ -96,23 +96,24 @@ class Index extends React.Component {
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
+        <h2>Contents of this project</h2>
+        <MarkdownBlock>Documentation and examples of what I learned on TensorFlow.js and ml5.js</MarkdownBlock>
+        <MarkdownBlock>Blog type posts for showing the daily progress made.</MarkdownBlock>
       </div>
     );
 
     const TryOut = () => (
-      <Block id="try">
+      <Block id="try" background="light">
         {[
           {
             content:
               // 'To make your landing page more attractive, use illustrations! Check out ' +
               // '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
               // 'The illustrations you see on this page are from unDraw.',
-              '',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+              'I am still learning...',
+            image: `${baseUrl}img/undraw_programming_2svr.svg`,
             imageAlign: 'left',
-            title: 'More to come here soon...',
+            title: 'More to come here soon™',
           },
         ]}
       </Block>
@@ -199,7 +200,7 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           {/* <Features /> */}
-          {/* <FeatureCallout /> */}
+          <FeatureCallout />
           {/* <LearnHow /> */}
           <TryOut />
           {/* <Description /> */}
