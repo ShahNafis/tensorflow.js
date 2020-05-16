@@ -16,4 +16,4 @@ relativly new.
 
 This doc site will host blog post section to show my daily progress and a
 documentation section to have a more structure examples and explanation of what
-I learned.
+I learned as well as my own attemps other then just following a tutorial.
