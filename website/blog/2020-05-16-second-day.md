@@ -15,3 +15,5 @@ then giving it the color green might not go so well for it since it has not been
 trained on green. The example for the video can be found
 [here](https://github.com/ml5js/ml5-library/blob/a7ef75408d35e9dd1b89f3d4bcb36783cb966590/src/utils/IMAGENET_CLASSES.js)
 show all the classes that the imagenet knows.
+
+So time for actual coding. I got the starting code from [here](https://github.com/CodingTrain/website/tree/master/learning/ml5/1.1_image_classification/P5).
